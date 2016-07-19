@@ -40,7 +40,7 @@ public class searchGoogleTest {
 
         // Wait for results to be shown
         WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.titleContains(mySearch));
+        wait.until(ExpectedConditions.titleContains("Pokemon Go"));
 
         // Should see: “[mySearch] - Google Search"
         System.out.println("Page title is: " + driver.getTitle());
